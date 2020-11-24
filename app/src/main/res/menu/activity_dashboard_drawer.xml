@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Dashbaord" />
+
+        <item
+            android:id="@+id/nav_manage_devices"
+            android:icon="@drawable/devices"
+            android:title="Manage Devices" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule"
+            android:title="Schedule Tasks" />
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support"
+            android:title="Support" />
+        <item
+            android:id="@+id/nav_membership"
+            android:icon="@drawable/membership"
+            android:title="Membership" />
+        <item
+            android:id="@+id/nav_social_ranking"
+            android:icon="@drawable/social"
+            android:title="Social Ranking" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/promotions"
+            android:title="Promotions" />
+    </group>
+</menu>

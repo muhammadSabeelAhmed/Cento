@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.IntroActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botttom_view"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:padding="02dp"
+            android:src="@drawable/intro_icon" />
+
+        <TextView
+            android:id="@+id/txt_intro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image1"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/txt_intro1"
+            android:textColor="@color/red_bg"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_intro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_intro1"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/txt_welcome"
+            android:textColor="@color/red_bg"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_intro3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_intro2"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/txt_an_app"
+            android:textColor="@color/red_bg"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txt_intro4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_intro3"
+            android:fontFamily="@font/montserrat_light"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="@string/txt_all_your"
+            android:textColor="@color/red_bg"
+            android:textSize="13dp" />
+
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_below="@+id/txt_intro4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/intro" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/botttom_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg">
+
+        <TextView
+            android:id="@+id/btn_started"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="@string/txt_get"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>

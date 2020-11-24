@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ScheduleFragment">
+
+    <ScrollView
+        android:paddingTop="05dp"
+        android:paddingBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="18dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/add_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="@string/txt_turn"
+                        android:textColor="@color/red_bg"
+                        android:textSize="14dp" />
+
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:padding="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/power" />
+                    <!--                        <io.ghyeok.stickyswitch.widget.StickySwitch-->
+                    <!--                            android:id="@+id/sticky_switch"-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="match_parent"-->
+                    <!--                            android:layout_centerInParent="true"-->
+                    <!--                            android:layout_marginLeft="30dp"-->
+                    <!--                            android:layout_marginTop="05dp"-->
+                    <!--                            android:layout_marginRight="30dp"-->
+                    <!--                            app:ss_animationDuration="600"-->
+                    <!--                            app:ss_animationType="line"-->
+                    <!--                            app:ss_iconPadding="10dp"-->
+                    <!--                            app:ss_iconSize="22dp"-->
+                    <!--                            app:ss_leftIcon="@drawable/off"-->
+                    <!--                            app:ss_leftText="OFF"-->
+                    <!--                            app:ss_rightIcon="@drawable/on"-->
+                    <!--                            app:ss_rightText="ON"-->
+                    <!--                            app:ss_selectedTextSize="14sp"-->
+                    <!--                            app:ss_sliderBackgroundColor="@color/black"-->
+                    <!--                            app:ss_switchColor="@color/white_bg"-->
+                    <!--                            app:ss_textColor="@color/red_bg"-->
+                    <!--                            app:ss_textSize="10dp" />-->
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="18dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <Spinner
+                    android:dropDownWidth="match_parent"
+                    android:pointerIcon="arrow"
+                    android:id="@+id/schedule_spinner"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="@color/red_bg"
+                    android:textColorHint="@color/red_bg"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="18dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/selected_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/txt_start"
+                    android:textColor="@color/red_bg"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="20dp"
+                    android:src="@drawable/calander" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="05dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="18dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <TextView
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="@string/txt_end"
+                    android:textColor="@color/red_bg"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:padding="20dp"
+                    android:src="@drawable/calander" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_bg">
+
+                <TextView
+                    android:id="@+id/btn_routine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Routine Task"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button_bg">
+
+                <TextView
+                    android:id="@+id/btn_schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="Schedule Task"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
