@@ -11,15 +11,15 @@
         android:theme="@style/Theme.CentoCentralizedControl">
         <activity
             android:name=".Activities.IntroActivity"
-            android:theme="@style/IntroTheme"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/IntroTheme" />
         <activity
             android:name=".Activities.DashboardActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activities.SplashActivity"
-            android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
