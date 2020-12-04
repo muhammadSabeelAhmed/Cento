@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -41,10 +42,10 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull DevicesAdapter.ViewHolder holder, int position) {
-        if (Global.device_back_tag.equals("ControlFragment")){
+        if (Global.device_back_tag.equals("ControlFragment")) {
             holder.control_switch.setVisibility(View.VISIBLE);
             holder.device_status.setVisibility(View.GONE);
-        }else {
+        } else {
             holder.control_switch.setVisibility(View.GONE);
             holder.device_status.setVisibility(View.VISIBLE);
         }
@@ -94,9 +95,10 @@ public class DevicesAdapter extends RecyclerView.Adapter<DevicesAdapter.ViewHold
                 Global.itemSettings.add(status);
                 Global.itemSettings.add(area);
                 Global.itemSettings.add(conn);
+                Toast.makeText(context, "TODO!", Toast.LENGTH_SHORT).show();
 
-            //    Global.mKProgressHUD.show();
-               // Global.changeMainFragment(context, new ControlFragment(), "", "");
+                //    Global.mKProgressHUD.show();
+                // Global.changeMainFragment(context, new ControlFragment(), "", "");
             }
         });
     }

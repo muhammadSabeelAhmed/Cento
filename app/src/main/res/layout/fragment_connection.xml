@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:paddingTop="10dp"
     tools:context=".Fragments.ConnectionFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -14,144 +14,193 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center_vertical"
             android:text="@string/txt_add"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="28dp" />
 
         <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center_vertical"
             android:text="Choose the kind of device you want to add."
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
-        <LinearLayout
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_Addconnect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:padding="15dp"
-                android:src="@drawable/bluetooth"
-                app:tint="@color/black" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="18dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
 
-                <TextView
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="15dp"
+                    android:src="@drawable/bluetooth"
+                    app:tint="@color/black" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:paddingLeft="10dp"
-                    android:text="Bluetooth"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="05dp"
-                    android:fontFamily="@font/montserrat_light"
-                    android:paddingLeft="10dp"
-                    android:text="Any kinds of bluetooth devices containing Cento Support"
-                    android:textColor="@color/black"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingLeft="10dp"
+                        android:text="Bluetooth"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="05dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:paddingLeft="10dp"
+                        android:text="Any kinds of bluetooth devices containing Cento Support"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
             </LinearLayout>
 
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:padding="20dp"
-                android:src="@drawable/wifi"
-                app:tint="@color/black" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="18dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
 
-                <TextView
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="20dp"
+                    android:src="@drawable/wifi"
+                    app:tint="@color/black" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:paddingLeft="10dp"
-                    android:text="Wireless"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="05dp"
-                    android:fontFamily="@font/montserrat_light"
-                    android:paddingLeft="10dp"
-                    android:text="Any kinds of wireless devices containing Cento Support"
-                    android:textColor="@color/black"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingLeft="10dp"
+                        android:text="Wireless"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="05dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:paddingLeft="10dp"
+                        android:text="Any kinds of wireless devices containing Cento Support"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="75dp"
-                android:padding="20dp"
-                android:src="@drawable/chrome_cast"
-                app:tint="@color/black" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="18dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <LinearLayout
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-                <TextView
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="20dp"
+                    android:src="@drawable/chrome_cast"
+                    app:tint="@color/black" />
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:paddingLeft="10dp"
-                    android:text="Chrome Cast"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="05dp"
-                    android:fontFamily="@font/montserrat_light"
-                    android:paddingLeft="10dp"
-                    android:text="Connect any kinds of device that support Chromecast"
-                    android:textColor="@color/black"
-                    android:textSize="14dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:paddingLeft="10dp"
+                        android:text="Chrome Cast"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="05dp"
+                        android:fontFamily="@font/montserrat_light"
+                        android:paddingLeft="10dp"
+                        android:text="Connect any kinds of device that support Chromecast"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
 </RelativeLayout>

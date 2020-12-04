@@ -59,8 +59,8 @@ public class DevicesFragment extends Fragment implements View.OnClickListener {
                 getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
             case R.id.btn_removeDevices:
-                Toast.makeText(getActivity(), "Inactive Devices will be available soon", Toast.LENGTH_SHORT).show();
-
+                Global.changeMainFragment(getActivity(), new InActiveFragment(), "", "");
+                getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 break;
         }
     }

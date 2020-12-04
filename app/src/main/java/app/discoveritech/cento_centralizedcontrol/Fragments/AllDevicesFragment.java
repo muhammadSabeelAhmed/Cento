@@ -41,19 +41,19 @@ public class AllDevicesFragment extends Fragment {
     private void init() {
         devicesList.clear();
         Global.devicesList.clear();
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Bedroom - 1", "cento-001", "Connected","F12"));
-        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "Null", "", "Bedroom - 1", "cento-002", "Disconnected","F12"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "TV Lounge", "cento-003", "Connected","F12"));
-        Global.devicesList.add(new Devices("Television", "" + new Date(), "Null", "", "TV Lounge", "cento-004", "Disconnected","G1"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Drawing Room", "cento-005", "Connected","S11"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "OFF", "", "Kitchen", "cento-006", "Connected","S12"));
-        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "ON", "", "Kitchen", "cento-007", "Connected","F12"));
-        Global.devicesList.add(new Devices("Fridge", "" + new Date(), "ON", "", "Kitchen", "cento-008", "Connected","F12"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Closed", "", "Main Gate", "cento-009", "Connected","M1"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Null", "", "Stairs Gate", "cento-010", "Disconnected","M2"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Open", "", "Roof Gate", "cento-011", "Connected","ML"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Null", "", "Drawing Room Gate", "cento-0012", "Disconnected","M3"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Open", "", "Bedroom - 1 Gate", "cento-013", "Connected","F12"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "Null", "", "Bedroom - 1", "cento-001", "Disconnected","HSB1"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "HIGH", "", "Bedroom - 1", "cento-001", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "LOW", "", "TV Lounge", "cento-003", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Door", "" + new Date(), "Closed", "", "Front Garage Door", "cento-005", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Air Conditioner", "" + new Date(), "Null", "", "PEL 2-Ton Inverter", "cento-006", "Disconnected","HSB1"));
+        Global.devicesList.add(new Devices("Speaker", "" + new Date(), "Vol 45", "", "Bluetooth Ceiling Stereo Speakers ", "cento-007", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Fridge", "" + new Date(), "ON", "", "Kitchen", "cento-008", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Television", "" + new Date(), "OFF", "", "TV Lounge", "cento-009", "Connected","HSB1")); devicesList.addAll(Global.devicesList);
+        Global.devicesList.add(new Devices("Door", "" + new Date(), "Null", "", "Front Garage Door", "cento-005", "Disconnected","HSB1"));
+        Global.devicesList.add(new Devices("Air Conditioner", "" + new Date(), "OFF", "", "PEL 2-Ton Inverter", "cento-006", "Connected","HSB1"));
+        Global.devicesList.add(new Devices("Speaker", "" + new Date(), "Null", "", "Bluetooth Ceiling Stereo Speakers ", "cento-007", "Disconnected","HSB1"));
+        Global.devicesList.add(new Devices("Television", "" + new Date(), "OFF", "", "TV Lounge 1", "cento-009", "Connected","HSB1")); devicesList.addAll(Global.devicesList);
+
         devicesList.addAll(Global.devicesList);
 
         devices_recycler = v.findViewById(R.id.schedule_recycler);
