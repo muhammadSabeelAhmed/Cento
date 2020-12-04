@@ -58,7 +58,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_acdevice"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -96,7 +96,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_device"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -144,7 +144,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_subs"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -182,7 +182,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_schedule"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -229,7 +229,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_social"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -267,7 +267,7 @@
                         android:fontFamily="@font/montserrat_bold"
                         android:gravity="center"
                         android:text="@string/txt_support"
-                        android:textColor="@color/red_bg"
+                        android:textColor="@color/blue_bg"
                         android:textSize="16sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

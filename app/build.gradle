@@ -48,8 +48,9 @@ dependencies {
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
     implementation 'com.zagori:bottomnavbar:1.0.2'
-    //Sticky Switch
-    implementation 'com.github.GwonHyeok:StickySwitch:0.0.16'
 //Chart
     implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+    //Switch
+    implementation 'com.polyak:icon-switch:1.0.0'
+
 }

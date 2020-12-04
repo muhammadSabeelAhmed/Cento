@@ -19,9 +19,10 @@ import app.discoveritech.cento_centralizedcontrol.R;
 public class Global {
     public static String device_back_tag = "";
     public static KProgressHUD mKProgressHUD;
-    public static ArrayList<Devices> devicesList =new ArrayList<>();
-   public static List<String> categories = new ArrayList<String>();
+    public static ArrayList<Devices> devicesList = new ArrayList<>();
+    public static List<String> categories = new ArrayList<String>();
     public static List<String> devices = new ArrayList<String>();
+    public static ArrayList<String> itemSettings = new ArrayList<>();
 
     public static void changeMainFragment(Context context, Fragment fragment, String key, String value) {
         if (!key.isEmpty()) {

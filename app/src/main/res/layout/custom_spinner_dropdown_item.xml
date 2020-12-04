@@ -9,6 +9,6 @@
     android:fontFamily="@font/montserrat_bold"
     android:singleLine="true"
     android:textAlignment="textStart"
-    android:textColor="@color/red_bg"
+    android:textColor="@color/blue_bg"
     android:textSize="14sp">
 </TextView>

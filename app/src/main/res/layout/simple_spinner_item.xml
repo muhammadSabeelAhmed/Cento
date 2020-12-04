@@ -10,6 +10,6 @@
     android:hint="@string/txt_category"
     android:singleLine="true"
     android:paddingLeft="15dp"
-    android:textColor="@color/red_bg"
-    android:textColorHint="@color/red_bg"
+    android:textColor="@color/blue_bg"
+    android:textColorHint="@color/blue_bg"
     android:textSize="14sp" />

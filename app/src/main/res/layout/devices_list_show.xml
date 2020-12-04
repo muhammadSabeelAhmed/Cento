@@ -34,12 +34,12 @@
                 <TextView
                     android:id="@+id/device_name"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat_bold"
                     android:gravity="center"
                     android:text="@string/txt_fan"
-                    android:textColor="@color/red_bg"
-                    android:textSize="22dp" />
+                    android:textColor="@color/blue_bg"
+                    android:textSize="20dp" />
 
                 <TextView
                     android:id="@+id/device_id"
@@ -47,10 +47,11 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:fontFamily="@font/montserrat_bold"
-                    android:gravity="center"
+                    android:gravity="left"
+                    android:singleLine="true"
                     android:text="Cento-001"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/device_conn"
@@ -61,7 +62,8 @@
                     android:gravity="center"
                     android:text="Connected"
                     android:textColor="@color/green"
-                    android:textSize="11sp" />
+                    android:textSize="11sp"
+                    android:visibility="gone" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -71,18 +73,27 @@
                 android:layout_marginBottom="05dp">
 
                 <TextView
-                    android:id="@+id/device_location"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true"
-                    android:layout_toStartOf="@+id/device_status"
+                    android:id="@+id/device_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginRight="85dp"
+                    android:background="@drawable/green_control"
                     android:fontFamily="@font/montserrat_bold"
-                    android:singleLine="true"
-                    android:text="@string/txt_drawing"
-                    android:textColor="@color/black"
-                    android:textSize="16dp" />
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="CONTROL"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
 
+                <com.polyak.iconswitch.IconSwitch
+                    android:visibility="gone"
+                    android:id="@+id/icon_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    app:isw_icon_size="12dp"
+                    app:isw_thumb_color_left="@color/red"
+                    app:isw_thumb_color_right="@color/green" />
 
                 <TextView
                     android:id="@+id/device_status"
@@ -93,38 +104,41 @@
                     android:gravity="center"
                     android:text="@string/txt_on"
                     android:textColor="@color/green"
-                    android:textSize="22dp" />
+                    android:textSize="20dp" />
             </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="02dp"
-                android:gravity="center_horizontal"
+                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/device_area"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_light"
-                    android:gravity="center"
+                    android:layout_alignBaseline="@id/device_location"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="left"
                     android:singleLine="true"
-                    android:text="@string/txt_updated"
-                    android:textColor="@color/red_bg"
-                    android:textSize="9sp" />
+                    android:text="FT123"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/device_updated"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/device_location"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="05dp"
-                    android:fontFamily="@font/montserrat_light"
-                    android:gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_horizontal|center_vertical"
                     android:singleLine="true"
-                    android:text="@string/txt_dated"
-                    android:textColor="@color/red_bg"
-                    android:textSize="09sp" />
-            </LinearLayout>
+                    android:text="@string/txt_drawing"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
             <!--            <RatingBar-->
             <!--                android:id="@+id/ratingBar"-->
             <!--                android:layout_width="wrap_content"-->

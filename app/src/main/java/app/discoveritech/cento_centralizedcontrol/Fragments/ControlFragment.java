@@ -20,7 +20,7 @@ import app.discoveritech.cento_centralizedcontrol.GeneralClasses.Global;
 import app.discoveritech.cento_centralizedcontrol.Model.Devices;
 import app.discoveritech.cento_centralizedcontrol.R;
 
-public class ActiveFragment extends Fragment {
+public class ControlFragment extends Fragment {
 
     RecyclerView devices_recycler;
     DevicesAdapter devicesAdapter;
@@ -31,10 +31,10 @@ public class ActiveFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        v = inflater.inflate(R.layout.fragment_active, container, false);
-        Global.device_back_tag = "ActiveFragment";
+        v = inflater.inflate(R.layout.fragment_control, container, false);
+        Global.device_back_tag = "ControlFragment";
         DashboardActivity.add_friend.setVisibility(View.GONE);
-        DashboardActivity.txt_mainToolbar.setText("Active Devices");
+        DashboardActivity.txt_mainToolbar.setText("Control Device");
         init();
         return v;
     }
@@ -48,10 +48,9 @@ public class ActiveFragment extends Fragment {
         Global.devicesList.add(new Devices("Air Conditioner", "" + new Date(), "28 C", "", "PEL 2-Ton Inverter", "cento-006", "Connected","HSB1"));
         Global.devicesList.add(new Devices("Speaker", "" + new Date(), "Vol 45", "", "Bluetooth Ceiling Stereo Speakers ", "cento-007", "Connected","HSB1"));
         Global.devicesList.add(new Devices("Fridge", "" + new Date(), "ON", "", "Kitchen", "cento-008", "Connected","HSB1"));
-        Global.devicesList.add(new Devices("Television", "" + new Date(), "OFF", "", "TV Lounge", "cento-009", "Connected","HSB1"));
-        devicesList.addAll(Global.devicesList);
+        Global.devicesList.add(new Devices("Television", "" + new Date(), "OFF", "", "TV Lounge", "cento-009", "Connected","HSB1")); devicesList.addAll(Global.devicesList);
 
-        devices_recycler = v.findViewById(R.id.active_recycler);
+        devices_recycler = v.findViewById(R.id.control_recycler);
         devicesAdapter = new DevicesAdapter(devicesList, getActivity());
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         devices_recycler.setLayoutManager(mLayoutManager);

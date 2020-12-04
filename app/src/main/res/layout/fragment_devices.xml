@@ -28,7 +28,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="@string/txt_control_devices"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="22dp" />
     </androidx.cardview.widget.CardView>
 
@@ -52,7 +52,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="@string/txt_add_device"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="22dp" />
     </androidx.cardview.widget.CardView>
 
@@ -75,8 +75,8 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
-            android:text="@string/txt_remove_device"
-            android:textColor="@color/red_bg"
+            android:text="Inactive Devices"
+            android:textColor="@color/blue_bg"
             android:textSize="22dp" />
     </androidx.cardview.widget.CardView>
 
@@ -100,7 +100,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center"
             android:text="@string/txt_allDevices"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="22dp" />
     </androidx.cardview.widget.CardView>
 

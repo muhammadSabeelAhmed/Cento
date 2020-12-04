@@ -58,7 +58,7 @@ public class UsageFragment extends Fragment {
         data.add(new ValueDataEntry("Saad", 19));
 
         Column column = cartesian.column(data);
-        column.color("#C7041D");
+        column.color("#207AA9");
         column.tooltip()
                 .titleFormat("{%X}")
                 .position(Position.CENTER_BOTTOM)

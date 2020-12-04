@@ -39,7 +39,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
                 android:text="@string/txt_name"
-                android:textColor="@color/red_bg"
+                android:textColor="@color/blue_bg"
                 android:textSize="16sp" />
 
             <TextView
@@ -49,7 +49,7 @@
                 android:fontFamily="@font/montserrat_light"
                 android:gravity="center"
                 android:text="@string/txt_city"
-                android:textColor="@color/red_bg"
+                android:textColor="@color/blue_bg"
                 android:textSize="12dp" />
 
             <TextView
@@ -59,7 +59,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
                 android:text="62%"
-                android:textColor="@color/red_bg"
+                android:textColor="@color/blue_bg"
                 android:textSize="12dp" />
 
             <LinearLayout
@@ -78,7 +78,7 @@
                     android:layout_height="05dp"
                     android:layout_marginLeft="03dp"
                     android:layout_weight="1.25"
-                    android:background="@color/red_bg" />
+                    android:background="@color/blue_bg" />
             </LinearLayout>
 
             <TextView
@@ -88,7 +88,7 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
                 android:text="Complete your profile"
-                android:textColor="@color/red_bg"
+                android:textColor="@color/blue_bg"
                 android:textSize="12dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -162,14 +162,46 @@
                         android:layout_height="35dp"
                         android:layout_weight="1"
                         android:padding="05dp"
-                        android:src="@drawable/schedule" />
+                        android:src="@drawable/area" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:fontFamily="@font/montserrat_light"
-                        android:text="Scheduled Device History"
+                        android:text="My Areas / Homes"
+                        android:textColor="#3C3C3C"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:padding="07dp"
+                        android:src="@drawable/go" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:padding="03dp"
+                        android:src="@drawable/loyalty" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="Loyalty Points"
                         android:textColor="#3C3C3C"
                         android:textSize="12sp" />
 
@@ -194,78 +226,14 @@
                         android:layout_height="35dp"
                         android:layout_weight="1"
                         android:padding="07dp"
-                        android:src="@drawable/support" />
+                        android:src="@drawable/reffrels" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:fontFamily="@font/montserrat_light"
-                        android:text="Support"
-                        android:textColor="#3C3C3C"
-                        android:textSize="12sp" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="25dp"
-                        android:layout_weight="1"
-                        android:padding="07dp"
-                        android:src="@drawable/go" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:weightSum="5">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
-                        android:padding="07dp"
-                        android:src="@drawable/social_records" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:fontFamily="@font/montserrat_light"
-                        android:text="Social Records"
-                        android:textColor="#3C3C3C"
-                        android:textSize="12sp" />
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="25dp"
-                        android:layout_weight="1"
-                        android:padding="07dp"
-                        android:src="@drawable/go" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:weightSum="5">
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="35dp"
-                        android:layout_weight="1"
-                        android:padding="07dp"
-                        android:src="@drawable/reminders" />
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:fontFamily="@font/montserrat_light"
-                        android:text="Reminders"
+                        android:text="Referrals"
                         android:textColor="#3C3C3C"
                         android:textSize="12sp" />
 
@@ -297,7 +265,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:fontFamily="@font/montserrat_light"
-                        android:text="Your Packages"
+                        android:text="Subscriptions"
                         android:textColor="#3C3C3C"
                         android:textSize="12sp" />
 
@@ -323,7 +291,7 @@
                         android:layout_weight="1"
                         android:padding="07dp"
                         android:src="@drawable/logout"
-                        app:tint="@color/red_bg" />
+                        app:tint="@color/blue_bg" />
 
                     <TextView
                         android:layout_width="0dp"
@@ -331,6 +299,37 @@
                         android:layout_weight="3"
                         android:fontFamily="@font/montserrat_light"
                         android:text="Logout"
+                        android:textColor="#3C3C3C"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:padding="07dp"
+                        android:src="@drawable/go" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:padding="07dp"
+                        android:src="@drawable/social_records" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/montserrat_light"
+                        android:text="User Logs"
                         android:textColor="#3C3C3C"
                         android:textSize="12sp" />
 

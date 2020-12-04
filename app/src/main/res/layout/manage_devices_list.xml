@@ -33,7 +33,7 @@
                 android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:text="@string/txt_fan"
-                android:textColor="@color/red_bg"
+                android:textColor="@color/blue_bg"
                 android:textSize="22dp" />
 
             <RelativeLayout

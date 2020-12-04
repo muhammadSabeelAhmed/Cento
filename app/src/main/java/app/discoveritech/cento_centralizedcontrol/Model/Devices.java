@@ -10,6 +10,7 @@ public class Devices implements IDevices {
     private String location;
     private String device_id;
     private String conn;
+    private String device_area;
 
     public Devices(String name, String lastUpdate, String status, String scheduledTime, String location) {
         this.name = name;
@@ -28,7 +29,8 @@ public class Devices implements IDevices {
         this.device_id = device_id;
     }
 
-    public Devices(String name, String lastUpdate, String status, String scheduledTime, String location, String device_id, String conn) {
+    public Devices(String name, String lastUpdate, String status, String scheduledTime, String location, String device_id, String conn, String device_area) {
+        this.device_area = device_area;
         this.name = name;
         this.lastUpdate = lastUpdate;
         this.status = status;
@@ -36,6 +38,14 @@ public class Devices implements IDevices {
         this.location = location;
         this.device_id = device_id;
         this.conn = conn;
+    }
+
+    public String getDevice_area() {
+        return device_area;
+    }
+
+    public void setDevice_area(String device_area) {
+        this.device_area = device_area;
     }
 
     public String getDevice_id() {

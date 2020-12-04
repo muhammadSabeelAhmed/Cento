@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="3"
+    android:weightSum="3.6"
     tools:context=".Fragments.DevicesFragment">
 
     <androidx.cardview.widget.CardView
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
@@ -32,17 +32,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:gravity="center"
-                android:text="@string/txt_bronze"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:text="Beginner"
                 android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="05dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -52,19 +52,20 @@
                     android:layout_weight="1.3"
                     android:fontFamily="@font/montserrat_bold"
                     android:gravity="start"
-                    android:paddingLeft="05dp"
+                    android:paddingLeft="15dp"
                     android:singleLine="true"
-                    android:text="Three Devices (Any)"
+                    android:text="Connect Upto 10 Devices"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:fontFamily="@font/montserrat_light"
-                    android:gravity="center"
-                    android:text="$ 3.00/month"
+                    android:gravity="end"
+                    android:paddingRight="15dp"
+                    android:text="$ 10.00/month"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -72,12 +73,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:text="$ 3.00"
-                android:textColor="@color/red_bg"
-                android:textSize="35dp" />
+                android:text="$ 10.00"
+                android:textColor="@color/blue_bg"
+                android:textSize="25dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -86,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="1"
@@ -106,17 +106,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:gravity="center"
-                android:text="@string/txt_silver"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:text="Professional"
                 android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="05dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -126,19 +126,20 @@
                     android:layout_weight="1.3"
                     android:fontFamily="@font/montserrat_bold"
                     android:gravity="start"
-                    android:paddingLeft="05dp"
+                    android:paddingLeft="15dp"
                     android:singleLine="true"
-                    android:text="6 Devices (Any)"
+                    android:text="Unlimited Devices"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:fontFamily="@font/montserrat_light"
-                    android:gravity="center"
-                    android:text="$ 5.00/month"
+                    android:gravity="end"
+                    android:paddingRight="15dp"
+                    android:text="$ 25.00/month"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -146,12 +147,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:text="$ 5.00"
-                android:textColor="@color/red_bg"
-                android:textSize="35dp" />
+                android:text="$ 25.00"
+                android:textColor="@color/blue_bg"
+                android:textSize="25dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -160,9 +160,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="100dp"
         android:layout_weight="1"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardBackgroundColor="@android:color/white"
@@ -180,17 +180,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
-                android:gravity="center"
-                android:text="@string/txt_gold"
+                android:gravity="left"
+                android:paddingLeft="15dp"
+                android:text="Premium Membership"
                 android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textSize="16dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="05dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
@@ -200,19 +200,20 @@
                     android:layout_weight="1.3"
                     android:fontFamily="@font/montserrat_bold"
                     android:gravity="start"
-                    android:paddingLeft="05dp"
+                    android:paddingLeft="15dp"
                     android:singleLine="true"
-                    android:text="Unlimited Devices (Any)"
+                    android:text="Premium User Subscription"
                     android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    android:textSize="13sp" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.7"
                     android:fontFamily="@font/montserrat_light"
-                    android:gravity="center"
-                    android:text="$ 25.00/month"
+                    android:gravity="end"
+                    android:paddingRight="15dp"
+                    android:text="$ 45.00/month"
                     android:textColor="@color/black"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -220,12 +221,52 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
-                android:text="$ 25.00"
-                android:textColor="@color/red_bg"
-                android:textSize="35dp" />
+                android:text="$ 45.00"
+                android:textColor="@color/blue_bg"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:layout_weight="0.6"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="Add New Area"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="05dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="$ 10.00/Each"
+                android:textColor="@color/blue_bg"
+                android:textSize="13sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

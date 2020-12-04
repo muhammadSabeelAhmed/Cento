@@ -68,20 +68,20 @@ public class ScheduleFragment extends Fragment implements AdapterView.OnItemSele
         // Spinner click listener
         spinner.setOnItemSelectedListener(this);
         Global.devicesList.clear();
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Bedroom - 1", "cento-001", "Connected"));
-        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "Unknown", "", "Bedroom - 1", "cento-002", "Disconnected"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "TV Lounge", "cento-003", "Connected"));
-        Global.devicesList.add(new Devices("Television", "" + new Date(), "Unknown", "", "TV Lounge", "cento-004", "Disconnected"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Drawing Room", "cento-005", "Connected"));
-        Global.devicesList.add(new Devices("Fan", "" + new Date(), "OFF", "", "Kitchen", "cento-006", "Connected"));
-        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "ON", "", "Kitchen", "cento-007", "Connected"));
-        Global.devicesList.add(new Devices("Fridge", "" + new Date(), "ON", "", "Kitchen", "cento-008", "Connected"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Locked", "", "Main Gate", "cento-009", "Connected"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Unknown", "", "Stairs Gate", "cento-010", "Disconnected"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Unlocked", "", "Roof Gate", "cento-011", "Connected"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Unknown", "", "Drawing Room Gate", "cento-0012", "Disconnected"));
-        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Unlocked", "", "Bedroom - 1 Gate", "cento-013", "Connected"));
-        devices.clear();
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Bedroom - 1", "cento-001", "Connected","F12"));
+        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "Null", "", "Bedroom - 1", "cento-002", "Disconnected","F12"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "TV Lounge", "cento-003", "Connected","F12"));
+        Global.devicesList.add(new Devices("Television", "" + new Date(), "Null", "", "TV Lounge", "cento-004", "Disconnected","G1"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "ON", "", "Drawing Room", "cento-005", "Connected","S11"));
+        Global.devicesList.add(new Devices("Fan", "" + new Date(), "OFF", "", "Kitchen", "cento-006", "Connected","S12"));
+        Global.devicesList.add(new Devices("Bulb", "" + new Date(), "ON", "", "Kitchen", "cento-007", "Connected","F12"));
+        Global.devicesList.add(new Devices("Fridge", "" + new Date(), "ON", "", "Kitchen", "cento-008", "Connected","F12"));
+        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Closed", "", "Main Gate", "cento-009", "Connected","M1"));
+        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Null", "", "Stairs Gate", "cento-010", "Disconnected","M2"));
+        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Open", "", "Roof Gate", "cento-011", "Connected","ML"));
+        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Null", "", "Drawing Room Gate", "cento-0012", "Disconnected","M3"));
+        Global.devicesList.add(new Devices("Gate Lock", "" + new Date(), "Open", "", "Bedroom - 1 Gate", "cento-013", "Connected","F12"));
+        devicesList.addAll(Global.devicesList);
         devices.add("Select Device");
         for (int i = 0; i <= devicesList.size() - 1; i++) {
             if (devicesList.get(i).getConn().equals("Connected")) {

@@ -15,7 +15,7 @@
         android:gravity="center"
         android:src="@drawable/ic_fr_done"
         android:text="@string/txt_text"
-        android:textColor="@color/red_bg"
+        android:textColor="@color/blue_bg"
         android:textSize="18dp"
         android:visibility="gone"
         app:drawableLeftCompat="@android:drawable/presence_online" />

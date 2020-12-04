@@ -32,7 +32,7 @@
             android:fontFamily="@font/montserrat_bold"
             android:gravity="center_vertical|center_horizontal"
             android:text="@string/txt_intro1"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="16sp" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:singleLine="true"
             android:text="@string/txt_welcome"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="16sp" />
 
         <TextView
@@ -57,7 +57,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:singleLine="true"
             android:text="@string/txt_an_app"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="13dp" />
 
         <TextView
@@ -69,7 +69,7 @@
             android:gravity="center_vertical|center_horizontal"
             android:singleLine="true"
             android:text="@string/txt_all_your"
-            android:textColor="@color/red_bg"
+            android:textColor="@color/blue_bg"
             android:textSize="13dp" />
 
 
